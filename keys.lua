@@ -1,5 +1,12 @@
 require "keybow"
-require "layouts/default" -- Numberpad
+
+function setup()
+	keybow.use_mini()
+end
+
+require "layouts/three_keys"
+
+-- require "layouts/default" -- Numberpad
 
 -- Custom layouts (uncomment to enable) --
 
