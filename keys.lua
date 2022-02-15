@@ -1,10 +1,5 @@
 require "keybow"
-
-function setup()
-	keybow.use_mini()
-end
-
-require "layouts/three_keys"
+require "layouts/mini"
 
 -- require "layouts/default" -- Numberpad
 
