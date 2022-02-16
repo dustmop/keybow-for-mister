@@ -1,0 +1,2 @@
+https://learn.pimoroni.com/article/setting-up-the-keybow-os
+https://learn.pimoroni.com/article/using-macros-and-snippets-with-keybow
