@@ -23,15 +23,12 @@ function setup()
     keybow.auto_lights(false)
     keybow.clear_lights()
 
-    for i=1,64 do
-       r, g, b = get_color(i+0)
-       keybow.set_pixel(0, r, g, b)
-       r, g, b = get_color(i+1)
-       keybow.set_pixel(1, r, g, b)
-       r, g, b = get_color(i+2)
-       keybow.set_pixel(2, r, g, b)
-       keybow.sleep(200)
-    end
+    r, g, b = get_color(32)
+    keybow.set_pixel(0, r, g, b)
+    r, g, b = get_color(16)
+    keybow.set_pixel(1, r, g, b)
+    r, g, b = get_color(0)
+    keybow.set_pixel(2, r, g, b)
 end
 
 
@@ -47,28 +44,25 @@ end
 -- Key mappings --
 
 function handle_minikey_00(pressed)
-    keybow.set_key("0", pressed)
-    if pressed then
-        keybow.set_pixel(0, 255, 0, 0)
-    else
-        keybow.set_pixel(0, 0, 0, 0)
-    end
+    keybow.set_key(keybow.ENTER, pressed)
 end
 
 function handle_minikey_01(pressed)
-    keybow.set_key("1", pressed)
-    if pressed then
-        keybow.set_pixel(1, 0, 255, 0)
-    else
-        keybow.set_pixel(1, 0, 0, 0)
-    end
+    keybow.set_key(keybow.F12, pressed)
 end
 
 function handle_minikey_02(pressed)
-    keybow.set_key("2", pressed)
     if pressed then
-        keybow.set_pixel(2, 0, 0, 255)
-    else
-        keybow.set_pixel(2, 0, 0, 0)
+        -- reset the mister
+        keybow.set_modifier(keybow.LEFT_SHIFT, keybow.KEY_DOWN)
+        keybow.set_modifier(keybow.LEFT_CTRL,  keybow.KEY_DOWN)
+        keybow.set_modifier(keybow.LEFT_ALT,   keybow.KEY_DOWN)
+        keybow.set_modifier(keybow.RIGHT_ALT,  keybow.KEY_DOWN)
+        keybow.sleep(10)
+        -- let go of keys
+        keybow.set_modifier(keybow.LEFT_SHIFT, keybow.KEY_UP)
+        keybow.set_modifier(keybow.LEFT_CTRL,  keybow.KEY_UP)
+        keybow.set_modifier(keybow.LEFT_ALT,   keybow.KEY_UP)
+        keybow.set_modifier(keybow.RIGHT_ALT,  keybow.KEY_UP)
     end
 end
