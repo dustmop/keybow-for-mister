@@ -1,5 +1,5 @@
 require "keybow"
-require "layouts/mini"
+require "layouts/dustmop"
 
 -- require "layouts/default" -- Numberpad
 
