@@ -1,6 +1,6 @@
-# Keybow for MiSTeR
+# Keybow for MiSTer
 
-This is my personal setup for using a Keybow mini mechanical keyboard to control the On Screen Display of my MiSTeR. Though the MiSTeR can just as easily be operated with any usb keyboard, I found the small form factor and macro functionality to be especially convenient for my needs.
+This is my personal setup for using a Keybow mini mechanical keyboard to control the On Screen Display of my [MiSTer](https://misteraddons.com/). Though the MiSTer can just as easily be operated with any usb keyboard, I found the Keybow's small form factor and macro functionality to be especially convenient for my needs.
 
 ## Purchase
 
@@ -13,7 +13,7 @@ Any micro SD card will work for the OS.
 ![](assets/key-layout.png)
 
 * Reset: presses the key combo for resetting the MiSTer
-* F12: bring up the OSD menu
+* Menu: presses F12 to display the OSD menu
 * Escape: exit menus
 * Enter: confirm a choice in the menu
 * Arrow keys: navigation
