@@ -1,2 +1,4 @@
-cp keys.lua /Volumes/KEYBOW12/keys.lua
-cp layouts/* /Volumes/KEYBOW12/layouts/.
+TARGET=/Volumes/KEYBOW12/
+cp keys.lua ${TARGET}keys.lua
+cp layouts/* ${TARGET}layouts/.
+echo DONE. deployed to ${TARGET}

@@ -13,7 +13,7 @@ function setup()
 
     -- 1st column
     keybow.set_pixel( 8, 0x00, 0x00, 0x00);
-    keybow.set_pixel( 7, 0xa0, 0x40, 0x00); -- yellow
+    keybow.set_pixel( 7, 0xa0, 0x40, 0x00); -- orange
     keybow.set_pixel( 6, 0x20, 0x20, 0xc0); -- blue
 
     -- 2nd column
@@ -23,7 +23,7 @@ function setup()
 
     -- 3rd column
     keybow.set_pixel( 2, 0x40, 0xc0, 0x40); -- green
-    keybow.set_pixel( 1, 0xa0, 0x40, 0x00); -- yellow
+    keybow.set_pixel( 1, 0xb0, 0x80, 0x00); -- yellow
     keybow.set_pixel( 0, 0x20, 0x20, 0xc0); -- blue
 end
 
